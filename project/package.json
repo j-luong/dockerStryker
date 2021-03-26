@@ -1,0 +1,49 @@
+{
+  "name": "docker-stryker",
+  "version": "1.0.0",
+  "description": "breaking child process issue",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "mutate": "stryker run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@stryker-mutator/core": "^4.4.1",
+    "@stryker-mutator/jest-runner": "^4.4.1",
+    "@stryker-mutator/typescript-checker": "^4.4.1",
+    "@types/aws-lambda": "8.10.45",
+    "@types/jest": "^24.9.0",
+    "@types/node": "^12.0.8",
+    "@types/uuid": "^3.4.4",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^1.10.2",
+    "aws-lambda": "^1.0.5",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "serverless": "^2.25.2",
+    "serverless-webpack": "^5.3.2",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^0.18.1",
+    "@opentelemetry/context-async-hooks": "^0.18.0",
+    "@opentelemetry/core": "^0.18.0",
+    "@opentelemetry/exporter-collector": "^0.18.0",
+    "@opentelemetry/tracing": "^0.18.0",
+    "middy": "^0.36.0",
+    "uuid": "^3.3.2"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
